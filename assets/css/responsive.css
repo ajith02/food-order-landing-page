@@ -1,0 +1,424 @@
+@media (max-width: 1200px) {
+
+	/*	Hero section */
+	#hero-section {
+		min-height: auto;
+		padding: 10rem 10vw;
+	}
+
+	.hero-content {
+		width: 50%;
+	}
+
+	.hero-img-container {
+		transform: scale(.85) translateX(2rem);
+	}
+
+	.hero-img:nth-child(1) {
+		width: 18rem;
+		left: -5%;
+		top: -5%;
+	}
+
+	.hero-img:nth-child(2) {
+		width: 15rem;
+		right: -9%;
+		top: 17%;
+	}
+
+	.hero-img:nth-child(3) {
+		width: 12rem;
+		left: 55%;
+		bottom: -20%;
+	}
+
+	.review-box {
+		width: 25rem;
+		bottom: 0;
+		left: 0;
+	}
+
+	/*	section*/
+	section {
+		padding: 3rem 10vw;
+	}
+
+	.food-image-container {
+		transform: scale(0.75) translateX(-6rem);
+	}
+
+	.restaurants-container {
+		gap: 1.2rem;
+	}
+
+	/*	About us review container */
+	.about-us-review-container,
+	.download-app-image-container {
+		transform: scale(0.9) translateX(-15%);
+	}
+
+	/* Faq */
+	.faq {
+		width: 100%;
+	}
+
+	#download-section .section-title {
+		font-size: 3.5rem;
+	}
+
+	.dish-layer {
+		transform: scale(0.85) translateX(4rem);
+	}
+}	
+
+@media (max-width: 998px) {
+
+	/*	section */
+	section {
+		padding: 3rem 7vw;
+	}
+
+	/* navbar */
+	.navbar {
+		padding: 0 7vw;
+	}
+
+	/* Hero section */
+	#hero-section {
+		padding: 5rem 7vw;
+	}
+
+	.hero-img-container {
+		transform: scale(0.75) translateX(2rem);
+	}
+
+	.hero-heading {
+		font-size: 3.5rem;
+	}
+
+	.hero-line {
+		margin-top: .5rem;
+	}
+
+	.hero-action-btn-container {
+		gap: 1rem;
+	}
+
+	#hero-section .review {
+		font-size: 1.3rem;
+		line-height: 2.3rem;
+	}
+
+	/* Restaurant section */
+	.food-image-container {
+		transform: scale(.8) translateX(-10%);
+	}
+
+	.food-img:nth-child(2) {
+		width: 10rem;
+		left: 95%;
+		top: 20%;
+	}
+
+	.food-img:nth-child(3) {
+		width: 8rem;
+		left: 99%;
+	}
+
+	.food-img:nth-child(4) {
+		width: 6rem;
+		left: 75%;
+	}
+
+	.food-img:nth-child(5) {
+		width: 5rem;
+		left: 35%;
+		top: 97%;
+	}
+
+	.food-img:nth-child(6) {
+		left: 8%;
+		top: 77%;
+	}
+
+	/* About */
+	.about {
+		padding: 5rem 10vw;
+	}
+
+	.about-us-review-container {
+		display: none;
+	}
+
+	.about {
+		padding: 0;
+		width: 100%;
+	}
+
+	.about-info {
+		width: 70%;
+	}
+
+	.services-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+	}
+
+	.service {
+		margin-bottom: 0;
+	}
+
+	/* Discount banner */
+	.discount-banner {
+		margin: 0 5vw 5rem;
+	}
+
+	#footer {
+		padding: 5vw;
+		padding-bottom: 5rem;
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+
+	.footer-links-container {
+		margin-left: 0;
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.footer-links-title {
+		display: block;
+		min-width: 100%;
+		margin-bottom: 0;
+	}
+
+	.footer-links-container.contact {
+		width: 100%;
+	}
+
+	.company-info .logo {
+		margin-bottom: 2rem;
+	}
+
+	.download-btn-group {
+		margin-top: 2rem;
+	}
+
+	.payment-patners {
+		position: relative;
+		flex-wrap: wrap;
+		right: auto;
+	}
+
+	.payment-patners-text {
+		right: auto;
+		position: relative;
+	}
+}
+
+@media (max-width: 820px) {
+
+	/* Navbar */
+	.nav-toggler {
+		display: block;
+		width: 2.5rem;
+		height: 2.5rem;
+		position: relative;
+		cursor: pointer;
+		transition: .5s ease-out;
+	}
+
+	.nav-toggler span {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%, -50%);
+		width: 70%;
+		height: .1rem;
+		border-radius: 1rem;
+		background: var(--secondary-color);
+		transition: .5s ease-out;
+	}
+
+	.nav-toggler span:nth-child(1) {
+		top: 30%;
+		height: 1px;
+	}
+
+	.nav-toggler span:nth-child(3) {
+		top: 70%;
+	}
+
+	.nav-toggler.active span:nth-child(1) {
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+
+	.nav-toggler.active span:nth-child(3) {
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+
+	.nav-toggler.active span:nth-child(2) {
+		width: 0;
+	}
+
+	.links-container {
+		display: block;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		margin-left: 0;
+		position: absolute;
+		background: var(--accent-color);
+		transition: .5s;
+		z-index: -1;
+		height: 0;
+		overflow: hidden;
+	}
+
+	.links-container.active {
+		height: 15rem;
+	}
+
+	.links-container .link-items {
+		text-align: right;
+	}
+
+	.links-container .links {
+		display: block;
+		padding: 1.2rem 10vw;
+	}
+
+	.links-container .links:hover {
+		background: var(--primary-color);
+		color: var(--secondary-text-color);
+	}
+
+	/* Hero section */
+	#hero-section {
+		flex-direction: column-reverse;
+		gap: 3rem;
+	}
+
+	.hero-content {
+		width: 80%;
+		min-width: 320px;
+	}
+
+	#hero-section .review-box {
+		width: 40rem;
+		left: -20%;
+	}
+
+	/* Restaurants */
+	.food-image-container {
+		transform: scale(.8) translateX(-50%);
+	}
+
+	.section {
+		flex-direction: column;
+		gap: 4rem;
+	}
+
+	.section-detail {
+		width: 90%;
+		margin: auto;
+	}
+
+	.restaurant-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* Download section */
+	.download-app-image-container {
+		transform: scale(.75) translateX(0);
+	}
+
+	.download-btn-group {
+		flex-direction: row;
+	}
+
+	.discount-banner .section-detail {
+		margin: 0;
+		width: 100%;
+	}
+
+	.dish-slide {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+
+	/* Hero section */
+	.hero-img-container {
+		transform: scale(.7) translateX(0);
+	}
+
+	#hero-section .review-box {
+		width: 25rem;
+		left: 0;
+	}
+
+	/* Restaurants */
+	.food-image-container {
+		transform: scale(.7) translateX(-5%);
+	}
+
+	.restaurant-container,
+	.services-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 350px) {
+
+	/* Hero section */
+	.hero-img-container {
+		transform: scale(.55) translateX(0);
+	}
+	
+	#hero-section .review {
+		font-size: 1.5rem;
+	}
+
+	.hero-content {
+		text-align: center;
+		padding-inline: 1em;
+	}
+
+	.hero-heading {
+		font-size: 2.5rem;
+	}
+
+	#hero-section .review-box {
+		width: 20rem;
+		left: 0;
+	}
+
+	.hero-action-btn-container {
+		flex-direction: column;
+	}
+
+	/* Restaurants */
+	.food-image-container {
+		transform: scale(.5) translateX(-5%);
+	}
+
+	.restaurant-container,
+	.services-container {
+		grid-template-columns: 1fr;
+	}
+
+	/* Download section */
+	.download-app-image-container {
+		transform: scale(.55);
+	}
+
+	.download-btn-group {
+		flex-direction: column;
+	}
+}
